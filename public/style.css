@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+        
+        width: 12%;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        padding: .4rem;
+        border: 2px solid gray;
+        align-self: center;
+}
+button{
+        align-self: center;
+        width: 12%;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        padding: 0.4rem;
+        border: 2px solid gray;
+        position: relative;   
+        transition: all .2s;
+}
+button:hover{
+    transform: skewX(10deg);
+
+}
+h1{
+    margin: 2rem;
+    align-self: center;
+    font-size: 5rem;
+    background: linear-gradient(to top, red,black);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    position: relative;
+}
+
+h1:hover{
+    transform: skewX(5deg) skewY(10deg);
+    box-shadow: 10px 20px rgba(0,0,0,.5);
+}
+button::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    /* z-index: 10; */
+    transition: all .5s;
+    z-index: -1;
+} 
+button:hover::after{
+    background-color: white;
+    transform: scaleX(2);
+    /* z-index: 200; */
+    opacity: 0;
+
+}
+textarea{
+    align-self: center;
+    width: 12%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    border: 2px solid gray;
+    
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.section-main{
+    background-image:linear-gradient(to top, rgba(0, 128, 0, 0.5),rgba(156, 143, 143, 0.9)),  url(../public/alpine-4968554_1920.jpg);
+}
